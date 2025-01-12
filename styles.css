@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e6f5;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #8a4e8e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu button {
+    background-color: #d8a8d8;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #a35ba3;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    color: #5a255a;
+}
+
+.flowers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('flowers-lila.png'); /* Añade una imagen de fondo de flores lilas */
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.8;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e6f5;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #8a4e8e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu button {
+    background-color: #d8a8d8;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #a35ba3;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    color: #5a255a;
+}
+
+.flowers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('flowers-lila.png'); /* Añade una imagen de fondo de flores lilas */
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.8;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7e6f5;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #8a4e8e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu button {
+    background-color: #d8a8d8;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #a35ba3;
+}
+
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    color: #5a255a;
+}
+
+.flowers {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('flowers-lila.png'); /* Añade una imagen de fondo de flores lilas */
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.8;
+}

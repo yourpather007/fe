@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi amada Maii TE AMO💗</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #000;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto;
+            max-width: 400px;
+            position: relative;
+        }
+
+        .carousel img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .carousel button:hover {
+            background-color: #f8bbd0;
+        }
+
+        .carousel .prev {
+            left: -50px;
+        }
+
+        .carousel .next {
+            right: -50px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #f8bbd0;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button-container button:hover {
+            background-color: #ec407a;
+        }
+
+        .message-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: linear-gradient(135deg, #f8bbd0, #fce4ec);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1000;
+            transition: transform 0.5s ease;
+            font-family: 'Poppins', sans-serif;
+            opacity: 0;
+        }
+
+        .message-container.show {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+
+        .message-container h2 {
+            font-size: 24px;
+            color: #880e4f;
+        }
+
+        .message-container p {
+            font-size: 18px;
+            color: #4a148c;
+            margin-top: 10px;
+        }
+
+        .message-container .close-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #880e4f;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .message-container .close-btn:hover {
+            background-color: #d81b60;
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Para mi amada Maii ❤</h1>
+    <p>Hecho con amor por Stiv</p>
+
+    <div class="carousel">
+        <button class="prev">&#8249;</button>
+        <img src="img/descarga%20(6).jpg" alt="Tu y yo" class="active">
+        <img src="img/descarga%20(7).jpg" alt="Imagen 4">
+        <img src="img/ELDEN%20RING%20FIA.jpeg" alt="Imagen 5">
+        <img src="img/IMG_8942.JPG" alt="Imagen 6">
+        <button class="next">&#8250;</button>
+    </div>
+
+    <div class="button-container">
+        <button onclick="showMessage()">Click aquí ❤</button>
+    </div>
+
+    <div class="message-container" id="message">
+        <h2>Un mensaje para ti, Maii ❤</h2>
+        <p id="customMessage">
+            Feliz cumpleaños amada mía (jeje) estaba esperando este momentooo
+
+            Te amo te amo te amoooooooo te amo te amo y te amo te amooooo te amo 
+            te amo quiero amarte una eternidad.
+
+            Estas creciendo muy bien porque eres la mujer más increíble que he conocido, gracias padres de maia.
+
+            Pues cuando te conocí nunca pensé que llegaríamos a tanto, pero paso el tiempo y mis sentimientos por ti se convirtieron en el ancla del amor 
+            en todo mi ser y hablo en serio, no es solo poesía o una frase que rima
+            es mi corazón expresando cada latido, mi corazoncito dice: te amo mai te amo mai, así late el. 
+            
+            Estoy perdidamente enamorado de ti y se que te lo digo casi a diario, pero es porque lo siento
+            todo el tiempo mientras como, cuando no pasamos tiempo juntos y te extraño sobre todo cuando me escribes y me dejas escuchar tu hermosa voz 
+            esa voz que tanto amo es como las olas del mar cuando cae la noche mientras el viento acaricia tu rostro.
+            
+            Me siento libre contigo, para que lo entiendas mejor, mi vida cuando no hablamos solo trata de ser mejor persona porque me odio un poco y quiero ser bueno
+            además solo me esfuerzo todo el tiempo, pero cuando estoy contigo siento paz siento que puedo descansar y es todo lo que quiero, tu eres todo lo que quiero.
+                                                              Te amo jazmín 💗
+        </p>
+        <button class="close-btn" onclick="closeMessage()">Cerrar</button>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.carousel img');
+        const prevButton = document.querySelector('.carousel .prev');
+        const nextButton = document.querySelector('.carousel .next');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+
+        nextButton.addEventListener('click', nextImage);
+        prevButton.addEventListener('click', prevImage);
+
+        // Slide automático cada 2.2 segundos
+        setInterval(nextImage, 2200);
+
+        // Mostrar el mensaje romántico
+        function showMessage() {
+            const messageContainer = document.getElementById('message');
+            messageContainer.classList.add('show');
+        }
+
+        // Cerrar el mensaje romántico
+        function closeMessage() {
+            const messageContainer = document.getElementById('message');
+            messageContainer.classList.remove('show');
+        }
+    </script>
+</body>
+</html>
+
